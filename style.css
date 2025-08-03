@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background: #fdfef8;
+  color: #002a3a;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+input, select, textarea, button {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  background: #f5a623;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
