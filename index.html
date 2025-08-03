@@ -1,25 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 11.0px Times; font-kerning: none; background-color: #ffffff}
-    span.s3 {font: 18.0px 'STIX Two Math'; font-kerning: none}
-    span.s4 {font-kerning: none; background-color: #b3b3b3}
-  </style>
+  <meta charset="UTF-8" />
+  <title>Оплата участия в ВАУ КВИЗ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Оплата участия в ВАУ КВИЗ</b></span></h1>
-<p class="p2"><span class="s1">Тематика </span><span class="s2">Загрузка...</span><span class="s1"> Стоимость участия Имя Название команды Телефон Кол-во участников Промокод Комментарий</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Итого: 0 </b></span><span class="s3">₽</span></h2>
-<p class="p4"><span class="s4">Оплатить</span></p>
-<p class="p2"><span class="s1">&lt;!-- fix test --&gt;</span></p>
+  <h1>Оплата участия в ВАУ КВИЗ</h1>
+  <form id="payment-form">
+    <label>Тематика:
+      <select id="game-select"><option>Загрузка...</option></select>
+    </label>
+    <label>Стоимость участия <input id="price" readonly /></label>
+    <label>Имя <input name="name" /></label>
+    <label>Название команды <input name="team" /></label>
+    <label>Телефон <input name="phone" /></label>
+    <label>Кол-во участников <input type="number" name="count" min="1" value="1" /></label>
+    <label>Промокод <input name="promo" /></label>
+    <label>Комментарий <input name="comment" /></label>
+    <p><strong>Итого: <span id="total">0</span> ₽</strong></p>
+    <button type="submit">Оплатить</button>
+  </form>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
